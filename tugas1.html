@@ -1,0 +1,40 @@
+<!--ANJA BUNGA ADITYA (2210511161)-->
+<!-- Komentar di atas adalah komentar HTML yang memberikan informasi tentang penulis atau hal lain yang relevan -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title> <!-- Judul halaman web -->
+  <link rel="stylesheet" href="tugas1.css" /> <!-- Menghubungkan file CSS -->
+</head>
+<body>
+  <div id="calculator"> <!-- Kontainer utama kalkulator -->
+    <input id="display" readonly /> <!-- Input yang menampilkan angka atau hasil perhitungan -->
+    <div id="keys"> <!-- Kontainer untuk tombol-tombol kalkulator -->
+      <!-- Tombol-tombol kalkulator -->
+      <button onclick="appendToDisplay('+')" class="operator-btn">+</button> <!-- Tombol untuk operasi penjumlahan -->
+      <button onclick="appendToDisplay('7')">7</button> <!-- Tombol angka 7 -->
+      <button onclick="appendToDisplay('8')">8</button> <!-- Tombol angka 8 -->
+      <button onclick="appendToDisplay('9')">9</button> <!-- Tombol angka 9 -->
+      <button onclick="appendToDisplay('-')" class="operator-btn">-</button> <!-- Tombol untuk operasi pengurangan -->
+      <button onclick="appendToDisplay('4')">4</button> <!-- Tombol angka 4 -->
+      <button onclick="appendToDisplay('5')">5</button> <!-- Tombol angka 5 -->
+      <button onclick="appendToDisplay('6')">6</button> <!-- Tombol angka 6 -->
+      <button onclick="appendToDisplay('*')" class="operator-btn">*</button> <!-- Tombol untuk operasi perkalian -->
+      <button onclick="appendToDisplay('1')">1</button> <!-- Tombol angka 1 -->
+      <button onclick="appendToDisplay('2')">2</button> <!-- Tombol angka 2 -->
+      <button onclick="appendToDisplay('3')">3</button> <!-- Tombol angka 3 -->
+      <button onclick="appendToDisplay('/')" class="operator-btn">/</button> <!-- Tombol untuk operasi pembagian -->
+      <button onclick="appendToDisplay('0')">0</button> <!-- Tombol angka 0 -->
+      <button onclick="appendToDisplay('.')">.</button> <!-- Tombol untuk desimal -->
+      <button onclick="calculate()">=</button> <!-- Tombol untuk menghitung hasil -->
+      <button onclick="clearDisplay()" class="operator-btn">C</button> <!-- Tombol untuk membersihkan input -->
+      <button onclick="deleteLastCharacter()" class="operator-btn">Del</button> <!-- Tombol untuk menghapus karakter terakhir -->
+    </div>
+  </div>
+
+  <script src="tugas1.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+</html>
